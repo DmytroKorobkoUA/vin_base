@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Сервіс для перевірки ТЗ (транспортних засобів) по VIN коду.
+Дані: https://data.gov.ua/dataset/06779371-308f-42d7-895e-5a39833375f0?fbclid=IwAR3lCqPYmtaSaP1zoaJA55NWUasI4iFS3CZG10Yvnk6-YeTBFS10aftS1Fw 
 
-Things you may want to cover:
+Вимоги: Rails latest, Ruby latest, REST.
 
-* Ruby version
+Мінімальні вимоги
 
-* System dependencies
+Адміністрування. Можливість завантажити zip файл та завантажити дані із нього у БД. 
+Можливість відредагувати запис.
+API яке буде по номеру автомобіля повератити всю інформацію про автомобіль.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
