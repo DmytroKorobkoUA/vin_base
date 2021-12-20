@@ -1,4 +1,31 @@
 <p id="notice"><%= notice %></p>
 
+<h1>Full Information</h1>
+
+<table border="1">
+  <tbody>
+    <%= render "show_field", row_title: 'VIN', row_data: @car.vin %>
+    <%= render "show_field", row_title: 'Brand', row_data: @car.brand %>
+    <%= render "show_field", row_title: 'Model', row_data: @car.model %>
+    <%= render "show_field", row_title: 'Color', row_data: @car.color %>
+    <%= render "show_field", row_title: 'Make Year', row_data: @car.make_year %>
+    <%= render "show_field", row_title: 'Person', row_data: @car.person %>
+    <%= render "show_field", row_title: 'Registration Address KOATUU', row_data: @car.reg_addr_koatuu %>
+    <%= render "show_field", row_title: 'Operation Code', row_data: @car.oper_code %>
+    <%= render "show_field", row_title: 'Operation Name', row_data: @car.oper_name %>
+    <%= render "show_field", row_title: 'Date Of Registration', row_data: @car.d_reg %>
+    <%= render "show_field", row_title: 'DEP Code', row_data: @car.dep_code %>
+    <%= render "show_field", row_title: 'DEP', row_data: @car.dep %>
+    <%= render "show_field", row_title: 'Kind', row_data: @car.kind %>
+    <%= render "show_field", row_title: 'Body', row_data: @car.body %>
+    <%= render "show_field", row_title: 'Purpose', row_data: @car.purpose %>
+    <%= render "show_field", row_title: 'Fuel', row_data: @car.fuel %>
+    <%= render "show_field", row_title: 'Capacity', row_data: @car.capacity %>
+    <%= render "show_field", row_title: 'Own Weight', row_data: @car.own_weight %>
+    <%= render "show_field", row_title: 'Total Weight', row_data: @car.total_weight %>
+    <%= render "show_field", row_title: 'Number Of Registration', row_data: @car.n_reg_new %>
+  </tbody>
+</table>
+
 <%= link_to 'Edit', edit_car_path(@car) %> |
 <%= link_to 'Back', cars_path %>
