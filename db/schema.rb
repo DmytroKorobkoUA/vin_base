@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2021_12_19_215253) do
 
   create_table "cars", force: :cascade do |t|
-    t.string "person", null: false
+    t.string "person"
     t.string "reg_addr_koatuu"
     t.string "oper_code"
     t.string "oper_name"
@@ -29,10 +29,10 @@ ActiveRecord::Schema.define(version: 2021_12_19_215253) do
     t.string "body"
     t.string "purpose"
     t.string "fuel"
-    t.integer "capacity", null: false
-    t.integer "own_weight", null: false
-    t.integer "total_weight", null: false
-    t.string "n_reg_new", null: false
+    t.integer "capacity"
+    t.integer "own_weight"
+    t.integer "total_weight"
+    t.string "n_reg_new"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
