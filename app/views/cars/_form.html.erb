@@ -11,6 +11,31 @@
     </div>
   <% end %>
 
+  <table border="1">
+    <tbody>
+    <%= render "form_field", form: form, row_title: 'VIN', row_data: :vin %>
+    <%= render "form_field", form: form, row_title: 'Brand', row_data: :brand %>
+    <%= render "form_field", form: form, row_title: 'Model', row_data: :model %>
+    <%= render "form_field", form: form, row_title: 'Color', row_data: :color %>
+    <%= render "form_field", form: form, row_title: 'Make Year', row_data: :make_year %>
+    <%= render "form_field", form: form, row_title: 'Person', row_data: :person %>
+    <%= render "form_field", form: form, row_title: 'Registration Address KOATUU', row_data: :reg_addr_koatuu %>
+    <%= render "form_field", form: form, row_title: 'Operation Code', row_data: :oper_code %>
+    <%= render "form_field", form: form, row_title: 'Operation Name', row_data: :oper_name %>
+    <%= render "form_field", form: form, row_title: 'Date Of Registration', row_data: :d_reg %>
+    <%= render "form_field", form: form, row_title: 'DEP Code', row_data: :dep_code %>
+    <%= render "form_field", form: form, row_title: 'DEP', row_data: :dep %>
+    <%= render "form_field", form: form, row_title: 'Kind', row_data: :kind %>
+    <%= render "form_field", form: form, row_title: 'Body', row_data: :body %>
+    <%= render "form_field", form: form, row_title: 'Purpose', row_data: :purpose %>
+    <%= render "form_field", form: form, row_title: 'Fuel', row_data: :fuel %>
+    <%= render "form_field", form: form, row_title: 'Capacity', row_data: :capacity %>
+    <%= render "form_field", form: form, row_title: 'Own Weight', row_data: :own_weight %>
+    <%= render "form_field", form: form, row_title: 'Total Weight', row_data: :total_weight %>
+    <%= render "form_field", form: form, row_title: 'Number Of Registration', row_data: :n_reg_new %>
+    </tbody>
+  </table>
+
   <div class="actions">
     <%= form.submit %>
   </div>
