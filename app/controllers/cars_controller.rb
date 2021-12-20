@@ -3,7 +3,7 @@ class CarsController < ApplicationController
 
   # GET /cars or /cars.json
   def index
-    @cars = Car.paginate(page: params[:page])
+    @cars = Car.search(params[:search]).paginate(page: params[:page])
   end
 
   # GET /cars/1 or /cars/1.json
@@ -85,6 +85,7 @@ class CarsController < ApplicationController
         :own_weight,
         :total_weight,
         :n_reg_new,
+        :search
         )
     end
 end

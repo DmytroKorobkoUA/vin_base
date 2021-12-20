@@ -85,4 +85,12 @@ class Car < ApplicationRecord
       n_reg_new: car['N_REG_NEW']
     )
   end
+
+  def self.search(search)
+    if search.empty?
+      self.all
+    else
+      self.where(vin: search)
+    end
+  end
 end
