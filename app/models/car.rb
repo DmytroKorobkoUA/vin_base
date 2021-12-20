@@ -6,6 +6,8 @@ class Car < ApplicationRecord
 
   validates :vin, presence: true
 
+  self.per_page = 25
+
   def self.download_zip(url='https://data.gov.ua/dataset/0ffd8b75-0628-48cc-952a-9302f9799ec0/resource/c5cb530d-0533-40be-b9ad-f03e06c94b10/download/tz_opendata_z01012021_po01122021.zip')
     download = URI.parse(url).open
     IO.copy_stream(download, "#{Rails.public_path}/zip/data.zip")

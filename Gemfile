@@ -63,3 +63,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'rubyzip', '>= 1.0.0'
 gem 'pry', '~> 0.13.1'
+gem 'will_paginate', '~> 3.3'
